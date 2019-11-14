@@ -1,12 +1,26 @@
 // costo per km
 var costokm = parseFloat("0.21");
-console.log(costokm + "€/km");
+console.log("Costo del biglietto per Km = " + costokm + "€/km");
 
 //Km da percorrere
 var km = prompt("Quanti Km devi percorrere?");
-console.log(km);
+console.log("Km da percorrere = " + km + "Km");
 //calcolo costo biglietto per km da percorrere
 var costobiglietto = (km * "0.21");
-console.log(costobiglietto);
+console.log("Costo del biglietto = " + costobiglietto + "€");
 
-//
+var eta = prompt("Quanti anni hai?");
+console.log("Età = " + eta + " anni");
+//Sconto del 20% per i minori di 18anni
+var scontominori = costobiglietto - ((costobiglietto * 20)/100);
+// console.log("Prezzo biglietto per i minori di 18 anni = " + scontominori + "€");
+//Sconto del 40% per gli over 65
+var scontover = costobiglietto - ((costobiglietto * 40)/100);
+// console.log("Prezzo biglietto per gli over 65 = " + scontover + "€");
+
+
+if (eta <=17) {
+    console.log("Prezzo biglietto per i minori di 18 anni = " + scontominori + "€");
+} else if (eta >=65){
+    console.log("Prezzo biglietto per gli over 65 = " + scontover + "€");
+}
