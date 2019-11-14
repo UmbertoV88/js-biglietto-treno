@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/10/13/47/station-839208_1280.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    color: #f0f0f0;
+}
+.row {
+    margin: 0 15%;
+}
+h1, p {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+h1 {
+    text-transform: uppercase;
+}
+
+#row {
+    display: none;
+}
+
+#row.visible {
+    display: block;
+}

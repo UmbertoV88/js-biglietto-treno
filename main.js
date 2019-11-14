@@ -21,6 +21,14 @@ var scontover = costobiglietto - ((costobiglietto * 40)/100);
 
 if (eta <=17) {
     console.log("Prezzo biglietto per i minori di 18 anni = " + scontominori + "€");
-} else if (eta >=65){
+    document.getElementById("costo").innerHTML =  scontominori;
+}   else if (eta >=65){
     console.log("Prezzo biglietto per gli over 65 = " + scontover + "€");
+    document.getElementById("costo").innerHTML =  scontover;
+}else if (eta){
+    document.getElementById("costo").innerHTML = costobiglietto;
 }
+
+document.getElementById("row").setAttribute("class", "visible");
+document.getElementById("km").innerHTML = km;
+document.getElementById("eta").innerHTML = eta;
