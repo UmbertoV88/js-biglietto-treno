@@ -11,14 +11,13 @@
     opacity: 0.8;
     color: #f0f0f0;
 }
-.row {
-    margin: 0 15%;
-}
+
 h1, p {
     padding-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     font-style: italic;
+    font-size: 25px;
 }
 h1 {
     text-transform: uppercase;
